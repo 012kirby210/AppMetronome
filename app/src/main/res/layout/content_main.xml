@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nextu.cmakeappmetro.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 : 00 : 00"
+        android:layout_marginBottom="58dp"
+        android:layout_gravity="center"
+        android:id="@+id/chrono_text_id"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numerateur_id"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/chrono_text_id"
+        android:layout_toStartOf="@+id/chrono_text_id"
+        />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/denominateur_id"
+        android:layout_alignTop="@+id/numerateur_id"
+        android:layout_toRightOf="@+id/chrono_text_id"
+        android:layout_toEndOf="@+id/chrono_text_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="/"
+        android:id="@+id/textView"
+        android:layout_marginBottom="65dp"
+        android:textSize="40dp"
+        android:layout_alignBottom="@+id/numerateur_id"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_tempo_id"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="@string/edit_tempo_hint"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+
+        android:layout_above="@+id/denominateur_id"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <TextView
+        android:text="0 / 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:id="@+id/measures_id"
+        android:textSize="30sp"
+        android:layout_above="@+id/chrono_text_id"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
