@@ -6,7 +6,7 @@ Métronome ultra basique et très précis : pour minimiser le jitter toute la lo
 L'application est très sobre, les guidelines [material design](https://material.io/design/guidelines-overview) de google ont été scrupuleusement respectées
 et l'application a été développée avec en tête une sobriété énergétique maximale : [https://developer.android.com/studio/profile/energy-profiler](https://developer.android.com/studio/profile/energy-profiler)  
 
-La norme utilisée est pour la programmation des timers est conforme POSIX 1b., 1c. (plus le système évolue, plus il devient précis).  
+La norme utilisée pour la programmation des timers est conforme POSIX 1b., 1c. (plus le système évolue, plus il devient précis).  
 
 
 ## Configuration
